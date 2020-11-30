@@ -22,7 +22,7 @@ const condition_forecast =document.getElementById('condition-forecast');
 const dataFetch = (location) => {
     messageOne.textContent = 'Loading ...'
 
-    fetch(`http://localhost:3000/weather?address=${location}`).then(response => {
+    fetch(`/weather?address=${location}`).then(response => {
         response.json().then(data => {
             if(data.error)
                 messageOne.textContent = data.error;
