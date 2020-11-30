@@ -22,7 +22,7 @@ a{
 nav{
   display:flex;
   flex-wrap:wrap;
-  background-color:#ffffffaa;
+  background-color:#232323;
   padding:0 10%;
   justify-content:space-between;
   box-shadow:0 0 10px #00000077;
@@ -31,6 +31,7 @@ nav{
 
 .logo{
   font-family:'Pacifico', cursive;
+  color: aqua;
   font-size:2rem;
   transition:color .3s ease;
 }
@@ -122,12 +123,14 @@ label,#toggle{
   letter-spacing: -.7px;
   font-weight: 500;
   line-height: 1.07;
+  color: aqua;
 }
 .after-temp{
   opacity: .6;
   line-height: 1.28;
   font-size: 24px;
   margin-left: -24px;
+  color: aqua;
 }
 
 #message-1{
@@ -147,10 +150,10 @@ label,#toggle{
   font-size: 18px;
 }
 #condition, #condition-forecast {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 #wind-left, #humidity-left, #is_day-left, #min-tem{
@@ -163,12 +166,24 @@ label,#toggle{
   font-size: 18px;
   font-weight: 500;
   line-height: 1.33;
+  text-align: start;
+  color: aqua;
 }
 .sub-container-tem{
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: center;
   text-align: start;
+}
+.sub-container-inner-1{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+.sub-container-inner-1 > div {
+  margin-top: 1rem;
 }
 #img, #img-forecast{
   width: 100px;
@@ -184,6 +199,7 @@ label,#toggle{
 #sunrise, #sunset{
   font-size: 20px;
   font-weight: 500;
+  color: aqua;
 }
 .astro-inner{
   display: grid;
@@ -208,6 +224,9 @@ label,#toggle{
   padding: 2rem 2rem;
 }
 @media screen and (max-width:600px){
+  #condition, #condition-forecast{
+    padding-bottom: 0rem;
+  }
   .index-div1 form input{
     width: 130px;
     margin: 0.5rem 0.02rem;
@@ -228,6 +247,9 @@ label,#toggle{
   }
   .sub-container{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .sub-container-tem{
+    text-align: center;
   }
   .fab{
     font-size: 20px;

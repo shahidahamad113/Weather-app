@@ -16,38 +16,45 @@
         <h4 id="current-weather">CURRENT WEATHER</h4>
         <p id="time"></p>
     </div>
+      <div class="astro">
+        <div>
+            <h4> Sunrise: <span id="sunrise"></span></h4>
+        </div>
+        <div> 
+            <h4>Sunset: <span id="sunset"></span></h4>
+        </div>
+    </div>
     <div class="sub-container">
         <div class="sub-container-tem">
-            <div><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather" id="img"></div>
+            <div>
+                <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather" id="img">
+                 <h4 id="condition"></h4>
+                </div>
             <div><h1><span id="temperature"></span><span class="after-temp">C</span></h1></div>
         </div>
         <div class="sub-container-inner">
-            <div>
-                <h2><span id="wind-left">WIND</span><span id="wind"></span></h2>
+            <div class="sub-container-inner-1">
+                <div><span id="wind-left">WIND</span></div>
+                <div><span id="wind"></span></div>
+            </div>
+            <div class="sub-container-inner-1">
+                <div><span id="humidity-left">HUMIDITY</span></div>
+                <div><span id="humidity"></span></div>
             </div>
             <div>
-                <h2><span id="humidity-left">HUMIDITY</span><span id="humidity"></span></h2>
-            </div>
-            <div>
-                <h2><span id="is_day-left">DAY/NIGHT</span><span id="is_day"></span></h2>
+                <div class="sub-container-inner-1">
+                    <div><span id="is_day-left">DAY/NIGHT</span></div>
+                    <div><span id="is_day"></span></div>
+                </div>
             </div>
         </div>
     </div>
     <div>
-        <h4 id="condition"></h4>
     </div>
 </div>
 <div class="container">
     <div>
         <h4 id="forecast">WEATHER FORECAST</h4>
-    </div>
-    <div class="astro">
-        <div>
-            <h4><i class="fab fa-sunrise"></i> Sunrise <span id="sunrise"></span></h4>
-        </div>
-        <div> 
-            <h4>Sunset <span id="sunset"></span></h4>
-        </div>
     </div>
     <div class="sub-container">
         <div class="sub-container-tem">
@@ -55,9 +62,18 @@
             <div><h1><span id="temperature-forecast"></span><span class="after-temp">C</span></h1></div>
         </div>
         <div class="sub-container-inner">
-            <div><h2><span id="min-tem">MIN TEMP</span><span id="mintem"></span></h2></div>
-            <div><h2><span id="humidity-left">AVG HUMIDITY</span><span id="avg-humidity"></span></h2></div>
-            <div><h2><span id="is_day-left">Rain Chances</span><span id="rain"></span></h2></div>
+            <div class="sub-container-inner-1">
+                <div><span id="min-tem">MIN TEMP</span></div>
+                <div><span id="mintem"></span></div>
+            </div>
+            <div class="sub-container-inner-1">
+                <div><span id="humidity-left">AVG HUMIDITY</span></div>
+                <div><span id="avg-humidity"></span></div>
+            </div>
+            <div class="sub-container-inner-1">
+                <div><span id="is_day-left">Rain Chances</span></div>
+                <div><span id="rain"></span></div>
+            </div>
         </div>
     </div>
     <div>
