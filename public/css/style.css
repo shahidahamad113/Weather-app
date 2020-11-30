@@ -154,6 +154,7 @@ label,#toggle{
   font-weight: bold;
   padding-left: 1rem;
   padding-bottom: 2rem;
+  color: aqua;
 }
 
 #wind-left, #humidity-left, #is_day-left, #min-tem{
