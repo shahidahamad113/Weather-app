@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:focus{
+  outline:none;
+}
+
+body{
+  font-family:sans-serif;
+  font-size: 16px;
+  background-color:#444;
+  color:#fff;
+  height:100vh;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+  cursor:pointer;
+  font-family:'Pacifico', cursive;
+}
+
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  background-color:#ffffffaa;
+  padding:0 10%;
+  justify-content:space-between;
+  box-shadow:0 0 10px #00000077;
+  backdrop-filter:blur(5px);
+}
+
+.logo{
+  font-family:'Pacifico', cursive;
+  font-size:2rem;
+  transition:color .3s ease;
+}
+
+.logo:hover, .logo:focus {
+  color:#111;
+}
+
+ul{
+  list-style:none;
+  display:flex;
+  align-items:center;
+}
+
+li{
+  margin-left:2em;
+}
+
+.link{
+   position:relative;
+}
+
+.link::after{
+  content:"";
+  display:block;  
+  position:absolute;
+  background-color:#444;
+  width:100%;
+  height:.2em;
+  bottom:-.3em;
+  left:0;
+  border-radius:.1em;
+  transform:scaleX(0);
+  transition:transform .3s ease;
+  transform-origin:right;
+}
+
+.link:hover::after, .link:focus::after   {
+  transform:scaleX(1);
+  transform-origin:left;
+}
+
+label,#toggle{
+  display:none;
+}
+
+
+.index-div1{
+    width: 100%;
+    background-color: #212529;
+}
+.index-div1 form{
+    padding: 0 0.5rem;
+}
+.index-div1 form input, button {
+    height: 100%;
+    margin: 0.5rem 0.07rem;
+    padding: 0.375rem 1.75rem;
+    border-radius: 0.1rem;
+    background-color:rgba(232, 234, 237, 0.1);
+    color: #fff;
+    border: 1px solid rgba(232, 234, 237, 0.1);
+    font-size: 15px;
+    
+}
+.container{
+    background-color: #232323;
+    box-shadow:0 0 10px #232323;
+    width: 100%;
+}
+.container >div {
+  margin: 1rem 1rem;
+}
+.index-div1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+.sub-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  text-align: center;
+  grid-gap: 0.5rem;
+}
+#temperature, #temperature-forecast{
+  font-size: 84px;
+  letter-spacing: -.7px;
+  font-weight: 500;
+  line-height: 1.07;
+}
+.after-temp{
+  opacity: .6;
+  line-height: 1.28;
+  font-size: 24px;
+  margin-left: -24px;
+}
+
+#message-1{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.sub-container-inner > div {
+  border-bottom: 0.1rem solid #444;
+  width: 80%;
+}
+#current-weather, #forecast{
+  padding-top: 1rem;
+  font-weight: 700;
+  line-height: 1.11;
+  font-size: 18px;
+}
+#condition, #condition-forecast {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+#wind-left, #humidity-left, #is_day-left, #min-tem{
+  font-size: 16px;
+  line-height: 1.25;
+  margin-right: 3rem;
+}
+
+#wind, #humidity, #is_day, #rain, #avg-humidity, #mintem{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+.sub-container-tem{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  text-align: start;
+}
+#img, #img-forecast{
+  width: 100px;
+  height: 100px;
+}
+.astro{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#sunrise, #sunset{
+  font-size: 20px;
+  font-weight: 500;
+}
+.astro-inner{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: start;
+}
+.fab{
+  font-size: 30px;
+}
+
+.footer .container{
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+.footer .container a{
+  padding: 1rem 1rem;
+}
+.about{
+  text-align: center;
+  padding: 2rem 2rem;
+}
+@media screen and (max-width:600px){
+  .index-div1 form input{
+    width: 130px;
+    margin: 0.5rem 0.02rem;
+  }
+  .index-div1{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #temperature, #temperature-forecast{
+    font-size: 44px;
+  }
+  .after-temp{
+    font-size: 19px;
+    margin-left: -11px;
+  }
+  #img, #img-forecast{
+    width: 60px;
+    height: 60px;
+  }
+  .sub-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fab{
+    font-size: 20px;
+  }
+  
+  label{
+    display:inline;
+    align-self:center;
+    cursor:pointer;
+  }
+ 
+  ul{
+    margin:6em 0;
+    display:none;
+    flex:100%;
+  }
+  
+  li{
+    margin-left:0;
+    text-align:center;
+    margin-bottom:3em;
+  }
+  
+  #toggle:checked + ul{
+    display:block;
+  }
+}
