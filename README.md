@@ -1,6 +1,8 @@
 # Weather-app
 Weather forecasting application
 
+#### visit website [weather-app](https://shahid-weather-app.herokuapp.com/)
+
 ### do npm install
 ### and then nodemon src/app.js
 
